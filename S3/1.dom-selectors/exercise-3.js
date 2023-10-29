@@ -1,0 +1,1 @@
+let parrafos = querySelectorAll('p');
