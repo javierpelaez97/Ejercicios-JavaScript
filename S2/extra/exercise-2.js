@@ -40,14 +40,3 @@ for (let user of users){
 }
 
 
-/* let coche = {
-    marca : 'bmw',
-    modelo : 'serie 1',
-    color : 'azul',
-    matricula : '1234DDD',
-    etiqueta : 'ECO'
-}
-
-for ( let param in coche ) {
-    console.log(param, coche[param]);
-}  */
