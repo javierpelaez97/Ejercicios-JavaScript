@@ -1,7 +1,7 @@
-Dado el siguiente javascript usa forof y forin para hacer la media del volumen de todos los sonidos favoritos que tienen
- los usuarios.
+/* Dado el siguiente javascript usa forof y forin para hacer la media del volumen de todos los sonidos favoritos que tienen
+ los usuarios. */
 
-```js
+
 const users = [
     {name: 'Manolo el del bombo',
         favoritesSounds: {
@@ -32,4 +32,22 @@ const users = [
         }
     },
 ]
-```
+mediaVolumen = new Array();
+
+for (let user of users){
+    console.log(user)
+    
+}
+
+
+/* let coche = {
+    marca : 'bmw',
+    modelo : 'serie 1',
+    color : 'azul',
+    matricula : '1234DDD',
+    etiqueta : 'ECO'
+}
+
+for ( let param in coche ) {
+    console.log(param, coche[param]);
+}  */
