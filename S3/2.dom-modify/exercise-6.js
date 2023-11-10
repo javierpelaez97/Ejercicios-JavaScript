@@ -13,7 +13,7 @@ body.appendChild(list);
 
 apps.forEach(app =>{
     let filas = document.createElement('li');
-    filas.innerHTML = app;;
+    filas.innerHTML = app;
     list.appendChild(filas);
 })
 
