@@ -5,16 +5,19 @@ Haz varios ejemplos y compruebalos. */
 
 const array = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
 
-let text =findArrayIndex('Caracol');
+let text = findArrayIndex('Caracol');
+
 function findArrayIndex(array, text) {
-    if(array === text){
+    if(array[] === text){
        return array.length;
        
     }
 }
-console.log(array.length)
 
-console.log (valor)
+
+console.log(findArrayIndex)
+
+
 
 
 

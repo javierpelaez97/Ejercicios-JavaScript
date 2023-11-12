@@ -1,0 +1,48 @@
+<!-- En base al ejercicio anterior. Crea dinamicamente un elemento <p> por 
+    cada petición a la api que diga...'El nombre X tiene un Y porciento de ser de 
+    Z' etc etc.
+
+EJ: El nombre Abel tiene un 22 porciento de ser de ET 
+y un 6 porciento de ser de MZ.
+-->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>Consultar</button>
+
+    <script>
+        const bodyElement = document.querySelector('body')
+        const nombreImput = document.querySelector('input')
+        
+        document.querySelector('button').addEventListener('click', () =>{
+            const nombre = nombreImput.value;
+            const baseUrl = `https://api.nationalize.io?name=${nombre}`;
+            fetch(baseUrl)
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.log(error)); 
+        })
+        
+        const addParrafo = (data) =>{
+            if(data){
+                const htmlStr = `
+                <p>El nombre ${data.name} tiene un ${data.country[0].probability} 
+                    de ser ${data.country[0].country_id} y un ${data.country[1].probability}
+                    ${data.country[1].country_id}</p>`;
+                    
+                bodyElement.insertAdjacentHTML('beforeend', htmlStr);
+                bodyElement.style.opacity = 1;
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>
