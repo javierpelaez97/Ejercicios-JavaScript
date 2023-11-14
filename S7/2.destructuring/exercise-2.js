@@ -6,6 +6,8 @@
 
 const fruits = ['Banana', 'Strawberry', 'Orange'];
 
-let fruit1;
-let frui2;
-let fruit3;
+const fruit1 = fruits[0];
+const fruit2 = fruits[1];
+const fruits3 = fruits [2];
+
+console.log(fruit1, fruit2, fruits3)

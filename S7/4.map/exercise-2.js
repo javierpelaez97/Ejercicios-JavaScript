@@ -10,9 +10,22 @@ const users = [
   { id: 4, name: "Amanda" },
 ];
 
-const nombre = users.map(user => {return{ name: user.name,}});
+ let user2 = new Array(); 
+const nombres2 = users.map(user => user.name);
+/* const nombres = users.map(user => user.name[0]== 'A'? 'Anacleto' : user.name); */
 
-if(nombre.name.indexOf('A')){
-    users.push('Anacleto');
-} 
+  /* console.log(nombres)  */
+   for(let i = 0; i< nombres2.length; i++){ 
+    /* console.log(nombres2[i].charAt(0)) */
+    if(nombres2[i].charAt(0) == 'A'){
+      user2.push('Anacleto')
+    }else{
+      user2.push(nombres2[i])
+    }
 
+  } 
+  console.log(user2)
+
+ 
+
+ 

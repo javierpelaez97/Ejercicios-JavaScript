@@ -3,19 +3,21 @@ posición del array cuando el valor del array sea igual al valor del texto que e
 
 Haz varios ejemplos y compruebalos. */
 
-const array = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
+const nombres = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
 
-let text = findArrayIndex('Caracol');
+let text = "Caracol";
 
-function findArrayIndex(array, text) {
-    if(array[] === text){
-       return array.length;
-       
-    }
+function findArrayIndex(nombres , text) {
+    /* for(let i = 0; i < nombres.length; i ++){
+        if(i === text ){
+            return nombres.length
+        }
+    } */
 }
 
+findArrayIndex();
 
-console.log(findArrayIndex)
+console.log(findArrayIndex())
 
 
 
