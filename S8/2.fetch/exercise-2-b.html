@@ -16,26 +16,33 @@ y un 6 porciento de ser de MZ.
 <body>
     <input type="text">
     <button>Consultar</button>
+    
 
     <script>
         const bodyElement = document.querySelector('body')
         const nombreImput = document.querySelector('input')
+        
         
         document.querySelector('button').addEventListener('click', () =>{
             const nombre = nombreImput.value;
             const baseUrl = `https://api.nationalize.io?name=${nombre}`;
             fetch(baseUrl)
                 .then(response => response.json())
-                .then(data => console.log(data))
+                .then(data => {
+                    console.log(data)
+                    addParrafo(data)})
                 .catch(error => console.log(error)); 
         })
         
         const addParrafo = (data) =>{
             if(data){
                 const htmlStr = `
-                <p>El nombre ${data.name} tiene un ${data.country[0].probability} 
-                    de ser ${data.country[0].country_id} y un ${data.country[1].probability}
-                    ${data.country[1].country_id}</p>`;
+                <p>El nombre ${data.name} tiene un ${data.country[0].probability * 100} 
+                    de ser ${data.country[0].country_id} y un ${data.country[1].probability * 100}
+                    ${data.country[1].country_id} <button> X </button> </p> `;
+
+                
+                    
                     
                 bodyElement.insertAdjacentHTML('beforeend', htmlStr);
                 bodyElement.style.opacity = 1;

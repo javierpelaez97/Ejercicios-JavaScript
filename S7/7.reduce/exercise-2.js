@@ -17,10 +17,9 @@ const exams = [
 ];
 
 const notas = exams.reduce((acumulador,nota)=>{
-    if(nota.score >= 5){
-        return acumulador + nota.score;  
+    if(nota.score > 4){
+        return acumulador + nota.score;
     }
-    console.log(acumulador)
 }, 0)
 
 console.log(notas)
