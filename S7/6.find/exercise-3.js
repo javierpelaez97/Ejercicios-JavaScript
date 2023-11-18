@@ -31,7 +31,8 @@ const mutations = [
 const alienName = aliens.find(alien => alien.name == 'Cucushumushu');
 const alienMutation = mutations.find(mutation => mutation.name == 'Porompompero')
 
-aliens.push(alienMutation)
+
+alienName.mutation = alienMutation;
 
 console.log(aliens)
 

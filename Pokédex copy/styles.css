@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    font-family: rubik;
+    color: white;
+  background-image: url('./assets/pokemon-wallpapers-22.jpg');
+}
+.container{
+text-align: center;
+color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+  }
+
