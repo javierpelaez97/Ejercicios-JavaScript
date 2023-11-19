@@ -1,0 +1,15 @@
+body{
+    background-image: url(./assets/pokemon-va6139eg5csznzmw.jpg);
+    object-fit: cover;
+}
+
+.container{
+    background-color: rgba(240, 248, 255, 0.363);
+    border-radius: 25px;
+
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 50px;
+}
