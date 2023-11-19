@@ -164,8 +164,9 @@ const calendarioMarciano = (fecha) => {
   const añoM = 864;
   const mesesM = 72;
 
-  
-}
+ 
+};
+
 console.log(
   "5A. calendarioMarciano",
   test("57-05-194", calendarioMarciano("4-10-476"))
