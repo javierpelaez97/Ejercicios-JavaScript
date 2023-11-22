@@ -34,18 +34,21 @@ y un 6 porciento de ser de MZ.
                 .catch(error => console.log(error)); 
         })
         
+        
         const addParrafo = (data) =>{
             if(data){
                 const htmlStr = `
                 <p>El nombre ${data.name} tiene un ${data.country[0].probability * 100} 
                     de ser ${data.country[0].country_id} y un ${data.country[1].probability * 100}
-                    ${data.country[1].country_id} <button> X </button> </p> `;
+                    ${data.country[1].country_id} <button class = "cerrar"> X </button> </p> `;
                 bodyElement.insertAdjacentHTML('beforeend', htmlStr);
                 bodyElement.style.opacity = 1;
                 
             }
         }
-        
+        document.querySelector('.cerrar').addEventListener('click', () =>{
+            addParrafo.remove();
+        })
     </script>
 </body>
 </html>

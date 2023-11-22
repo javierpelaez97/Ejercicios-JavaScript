@@ -10,30 +10,30 @@ Ejecuta varias veces la función father y haz finalmente un console.log de numbe
 
 const numbersList = [];
 
+
+
 function sum(a,b){
-    return a + b;
+  let suma = a + b;
+    return suma;
 }
 
 function substract(a,b){
-    return a - b;
+  let resta = a - b;
+    return resta;
 }
 
-function father(a, b, sum ){
-    
+
+function father( a = 120, b= 20 ){
+   let hijo = substract(a, b);
+   numbersList.push(hijo)
 }
 
-function crearCita(cita, callback){ 
-    var miCita = "Como yo siempre digo, " + cita;
-    callback(miCita); // 2
-    console.log(callback)
-  }
-  
-  function logCita(cita){
-    console.log(cita);
-  }
-  
-  crearCita("come tus vegetales!", logCita); // 1
-  
-  // Resultado en la consola: 
-  // Como yo siempre digo, come tus vegetales!
+father();
+father();
+father();
+father();
+
+console.log(numbersList)
+
+
 
